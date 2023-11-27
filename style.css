@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: #c3ecf7;
+  color: #444;
+}
+
+/* nav section */
+nav {
+  background-color: #758e94;
+  color: #e2e8f0;
+}
+
+.nav-contents {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btns {
+  /* justify-content: flex-end; */
+}
+.nav-icon {
+  font-size: 48px;
+  color: #e2e8f0;
+}
