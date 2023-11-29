@@ -2,78 +2,121 @@
 - Font Sizes (px):
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62  / 74 / 86 / 98 
 
-- Colors Used:
-#c3ecf7
-#758e94
-#e2e8f0
-#444
+- Spacing System (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+- Colors Used:
 */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
-  background-color: #c3ecf7;
+  font-weight: 400;
   color: #444;
+  line-height: 1.8;
+  background-color: #f2f2f2;
 }
 
-/* nav section */
-nav {
-  background-color: #758e94;
-  color: #e2e8f0;
-  padding: 14px 8px;
-  margin-bottom: 6rem;
+/* general elements */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
-.nav-contents {
+/***************************/
+/* HEADER SECTION */
+/***************************/
+
+.nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  /* justify-content: center; */
-  gap: 12px;
+  height: 6rem;
+  padding: 1rem 0;
+  margin-bottom: 9rem;
 }
 
-.nav-list {
+.nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.8rem;
   margin-left: auto;
   list-style: none;
 }
 
+.nav-links,
+.nav-h3 {
+  font-size: 1.7rem;
+}
+
 .nav-link {
-  display: inline-block;
-  background-color: #c3ecf7;
+  background-color: #fdcb6e;
   color: #444;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 6px;
 }
+
 .nav-icon {
   font-size: 48px;
-  color: #e2e8f0;
 }
 
-/* header section */
+.header-SECTION {
+  /* width: 1200px; */
+  padding: 0 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
 .header-container {
   display: flex;
-  gap: 4rem;
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
+  gap: 6rem;
 }
 
-h1 {
-  font-size: 44px;
-  line-height: 1.1;
-  letter-spacing: -1.5px;
-  margin-bottom: 40px;
+.header-textbox {
+  padding: 0.5rem 0.8rem;
+}
+
+.header-title {
+  font-size: 3.6rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+  margin-bottom: 3rem;
 }
 
 .header-text {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.header-img {
+  flex: 0 0 400px;
+}
+
+/***************************/
+/* CARDS SECTION */
+/***************************/
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.cards-book {
+  background-color: #a09c9c;
+  padding: 2.4rem 3.2rem;
+}
+
+.card-img {
+  width: 70%;
 }

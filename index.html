@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,60 +12,102 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Books for Brains</title>
   </head>
   <body>
-    <!-- nav section -->
-    <nav>
-      <div class="nav-contents">
-        <i class="ph-bold ph-book nav-icon"></i>
-        <h3>BOOKS FOR BRAINS</h3>
+    <div class="container">
+      <!-- header section -->
+      <header class="header-SECTION">
+        <nav class="nav">
+          <i class="ph-bold ph-book nav-icon"></i>
+          <h3 class="nav-h3">BOOKS FOR BRAINS</h3>
 
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#">Books</a></li>
-          <li><a class="nav-link" href="#">Reviews</a></li>
-          <li><a class="nav-link" href="#">Sign Up</a></li>
-        </ul>
-      </div>
-    </nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+          </ul>
+        </nav>
 
-    <!-- header section -->
-    <div class="header">
-      <div class="header-container">
-        <div>
-          <h1>Brains love to learn about themselves!</h1>
-          <p class="header-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-            expedita minus facilis neque quia a reiciendis quidem provident odio
-            exercitationem delectus sapiente vel, odit voluptatum? Id, Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Rerum mollitia
-            aliquid omnis quos aliquam, voluptatum perferendis, quisquam dolorem
-            alias in at impedit repellendus esse fugit dolore hic. Aperiam,
-            voluptatem eum!
-          </p>
+        <div class="header-container">
+          <div class="header-textbox">
+            <h1 class="header-title">
+              Feed your brain the knowledge it wants to know- all about itself!
+            </h1>
+            <p class="header-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              reiciendis fugit voluptatem, nemo eius in cumque ipsa, molestias
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              saepe tenetur officiis quam. Possimus aspernatur dolor a
+              voluptates minima similique rem magnam? Neque hic tenetur quis
+              amet rerum cupiditate! voluptatibus molestiae aspernatur quas
+              facere nesciunt impedit expedita repudiandae.
+            </p>
+          </div>
+
+          <img
+            class="header-img"
+            src="img/brain.jpg"
+            width="400px"
+            height="400px"
+            alt="a brain with glasses reading a book"
+          />
         </div>
+      </header>
 
-        <img
-          class="header-img"
-          src="img/brain.jpg"
-          width="400px"
-          alt="a brain with glasses reading a book"
-        />
+      <!-- Cards Section -->
+      <div class="cards-section">
+        <div class="container">
+          <span class="subheading">FOOD FOR THOUGHT</span>
+
+          <div class="cards-container">
+            <div class="cards-book book">
+              <img src="img/incognito.png" alt="book cover" class="card-img" />
+
+              <h4 class="card-author">David Eagleman</h4>
+              <p class="card-text">
+                summary text summary text summary text summary text summary text
+                summary text.
+              </p>
+            </div>
+
+            <div class="cards-book book">
+              <img src="img/livewired.png" alt="book cover" class="card-img" />
+
+              <h4 class="card-author">David Eagleman</h4>
+              <p class="card-text">
+                summary text summary text summary text summary text summary text
+                summary text.
+              </p>
+            </div>
+
+            <div class="cards-book book">
+              <img src="img/behave.png" alt="book cover" class="card-img" />
+
+              <h4 class="card-author">Robert M. Sapolsky</h4>
+              <p class="card-text">
+                summary text summary text summary text summary text summary text
+                summary text.
+              </p>
+            </div>
+
+            <div class="cards-book book">
+              <img src="img/determined.png" alt="book cover" class="card-img" />
+
+              <h4 class="card-author">Robert M. Sapolsky</h4>
+              <p class="card-text">
+                summary text summary text summary text summary text summary text
+                summary text.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- review section -->
+
+      <!-- signup section -->
     </div>
-
-    <!-- card section -->
-    <div class="cards-section">
-      <div class="cards-container">
-        <div class="cards-book book"></div>
-        <div class="cards-book book"></div>
-        <div class="cards-book book"></div>
-        <div class="cards-book book"></div>
-      </div>
-    </div>
-
-    <!-- review section -->
-
-    <!-- signup section -->
   </body>
 </html>
