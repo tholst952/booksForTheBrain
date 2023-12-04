@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Books for Brains</title>
@@ -18,14 +22,18 @@
   <body>
     <div class="container">
       <!-- header section -->
-      <header class="header-section">
+      <header class="header-section" id="section--1">
         <nav class="nav">
           <i class="ph-bold ph-book nav-icon"></i>
           <h3 class="nav-h3">BOOKS FOR BRAINS</h3>
 
           <ul class="nav-links">
-            <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section--2">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section--3">Reviews</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
           </ul>
         </nav>
@@ -40,11 +48,13 @@
               Your brain is encased in complete darkness inside your skull. Your
               sensory oragans, your eyes, ears, nose and entire body feed it
               signals and then your brain interprets those so that you can
-              experience life! How does it do this? What are neurons? What are
-              the effects of damage to the brain in different areas? How does
-              the brain adapt itself? Why do we have conflicting thoughts and
-              behaviors? What internal and external forces influence your
-              behavior?
+              experience life! <em>How does it do this?</em> What are neurons?
+              What are the effects of damage to the brain in different areas?
+              How does the brain adapt itself?
+              <strong
+                >Why do we have conflicting thoughts and behaviors?</strong
+              >
+              Well, we can learn about this stuff!!
             </p>
           </div>
 
@@ -60,7 +70,7 @@
 
       <!-- Cards Section -->
       <span class="subheading">FOOD FOR THOUGHT</span>
-      <div class="cards-section container">
+      <div class="cards-section container" id="section--2">
         <div class="cards-book book">
           <img src="img/incognito.png" alt="book cover" class="card-img" />
           <h4 class="card-author">David Eagleman</h4>
@@ -108,8 +118,63 @@
       </div>
 
       <!-- review section -->
+      <div class="reviews-section container" id="section--3">
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="review">
+              <h5 class="review-header">Wow!!</h5>
+              <blockquote class="review-text">
+                “Fascinating. . . . Eagleman has the ability to turn hard
+                science and jargon into interesting and relatable prose,
+                illuminating the mind’s processes with clever analogies and
+                metaphors.”
+              </blockquote>
+
+              <address class="review-author">
+                <img
+                  src="img/sim.png"
+                  alt="a girl's face"
+                  width="100px"
+                  class="review-author-img"
+                />
+                <h6 class="review-name">
+                  &mdash;Sim, from Salt Lake City Weekly
+                </h6>
+              </address>
+            </div>
+            <!-- buttons and dots are in the slide -->
+            <button class="slider-btn slider-btn--left">&larr;</button>
+            <button class="slider-btn slider-btn--right">&rarr;</button>
+          </div>
+        </div>
+      </div>
 
       <!-- signup section -->
+      <div class="signup-section container">
+        <div class="signup-card">
+          <img
+            src="img/happybrain.png"
+            alt="a happy brain"
+            width=" 400px"
+            class="signup-img"
+          />
+          <div class="signup-content">
+            <h3 class="signup-title">
+              <span class="highlight">Want more?</span><br />There is plenty
+              more to check out!
+            </h3>
+            <p class="signup-text">
+              Sign up to get fascinating recommendations straight to your inbox.
+              Not only books, but articles, websites and documentaries about
+              your astounding brain! See ya next time and stay curious!
+            </p>
+            <input id="email" type="email" />
+            <button class="btn-submit">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="footer"></footer>
   </body>
 </html>

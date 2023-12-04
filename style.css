@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,8 +62,14 @@ body {
   background-color: #ffd08a;
   color: #444;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 12px 24px;
   border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: #ffd08a;
+  box-shadow: 10px 5px 20px rgba(247, 159, 27, 0.644);
+  font-weight: bold;
 }
 
 .nav-icon {
@@ -113,6 +120,7 @@ body {
 
 .header-img {
   flex: 0 0 400px;
+  border-radius: 0.5rem;
 }
 
 /***************************/
@@ -127,6 +135,7 @@ body {
   gap: 2.4rem;
   justify-content: center;
   margin-top: 4.8rem;
+  margin-bottom: 9.6rem;
 }
 
 .cards-book {
@@ -157,4 +166,116 @@ body {
 .card-text {
   font-size: 1.4rem;
   line-height: 2.1;
+}
+
+/***************************/
+/* REVIEWS SECTION */
+/***************************/
+
+.reviews-section {
+  max-width: 102rem;
+  /* height: 50rem; */
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+  /* position: relative; */
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    330deg,
+    rgba(255, 203, 125, 1) 47%,
+    rgba(255, 224, 177, 1) 91%
+  );
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  width: 75%;
+  position: relative;
+}
+
+.review-header {
+  font-size: 3.2rem;
+  margin-top: 3.6rem;
+}
+
+.review-text {
+  font-size: 2.2rem;
+  font-style: italic;
+  margin-bottom: 2.4rem;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 2rem;
+  margin-left: 40rem;
+}
+
+.review-author-img {
+  width: 60px;
+}
+
+/* testing buttons */
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider-btn--left {
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-btn--right {
+  right: 5%;
+  transform: translate(50%, -50%);
+}
+
+/***************************/
+/* SIGNUP SECTION */
+/***************************/
+.signup-card {
+  /* box-shadow: 20px 20px 17px 3px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.signup-img {
+  border-radius: 0.5rem;
+}
+
+.signup-title {
+  font-size: 3.2rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.signup-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
 }
