@@ -44,6 +44,7 @@ body {
   height: 6rem;
   padding: 1rem 0;
   margin-bottom: 9rem;
+  font-size: 1.7rem;
 }
 
 .nav-links {
@@ -53,12 +54,8 @@ body {
   list-style: none;
 }
 
-.nav-links,
-.nav-h3 {
-  font-size: 1.7rem;
-}
-
-.nav-link {
+.nav-link:link,
+.nav-link:visited {
   background-color: #ffd08a;
   color: #444;
   text-decoration: none;
@@ -66,10 +63,10 @@ body {
   border-radius: 6px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   background-color: #ffd08a;
-  box-shadow: 10px 5px 20px rgba(247, 159, 27, 0.644);
-  font-weight: bold;
+  box-shadow: 10px 5px 20px rgba(101, 77, 41, 0.644);
 }
 
 .nav-icon {
@@ -131,41 +128,77 @@ body {
 }
 
 .cards-section {
-  display: flex;
-  gap: 2.4rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   margin-top: 4.8rem;
   margin-bottom: 9.6rem;
 }
 
 .cards-book {
-  background-color: #e9ebec;
-  width: 256px;
+  background-color: #fdfefe;
+
   display: grid; /* Use grid for individual cards */
   grid-template-rows: auto 1fr auto;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
+  /* align-items: center; */
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   box-shadow: 20px 20px 17px 3px rgba(0, 0, 0, 0.1);
-  padding: 2.4rem 1.6rem;
 }
 
 .card-img {
   width: 100%;
-  height: auto;
-  padding: 0 1.8rem;
-  justify-self: center;
-  margin-bottom: 2.4rem;
+  display: block;
+}
+
+.card-img-behave {
+  box-shadow: 0 1px 0.5px 0 rgb(211, 211, 211);
+}
+
+.card-content {
+  padding: 2rem;
+  line-height: 1;
+  position: relative;
+}
+
+.card-book-title {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .card-author {
   font-size: 1.2rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .card-text {
   font-size: 1.4rem;
-  line-height: 2.1;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.buy-link:link,
+.buy-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #9bc5d9;
+  color: #444;
+  border-radius: 12px;
+  padding: 8px 16px;
+  outline: none;
+  position: absolute;
+  bottom: 5%;
+}
+
+.buy-link:hover {
+  background-color: #c3dce8;
+}
+
+.buy-link:active {
+  transform: scale(0.98);
 }
 
 /***************************/
@@ -180,7 +213,7 @@ body {
   /* position: relative; */
 }
 
-.slide {
+.slider {
   position: relative;
   width: 100%;
   height: 40rem;
@@ -190,11 +223,12 @@ body {
     rgba(255, 203, 125, 1) 47%,
     rgba(255, 224, 177, 1) 91%
   );
-  padding: 2rem;
+}
 
+.slide {
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 4.6rem 2rem;
 }
 
 .review {
@@ -223,6 +257,11 @@ body {
 
 .review-author-img {
   width: 60px;
+  border-radius: 55%;
+}
+
+.hidden {
+  display: none;
 }
 
 /* testing buttons */
@@ -241,6 +280,10 @@ body {
   width: 5.5rem;
   font-size: 3.25rem;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-btn--left {
@@ -266,6 +309,7 @@ body {
 
 .signup-img {
   border-radius: 0.5rem;
+  mix-blend-mode: multiply;
 }
 
 .signup-title {
