@@ -170,7 +170,7 @@ body {
 
 .card-author {
   font-size: 1.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .card-text {
@@ -214,9 +214,9 @@ body {
 }
 
 .slider {
-  position: relative;
-  width: 100%;
+  max-width: 102rem;
   height: 40rem;
+  position: relative;
   border-radius: 0.5rem;
   background: linear-gradient(
     330deg,
@@ -226,23 +226,29 @@ body {
 }
 
 .slide {
+  position: absolute;
+  top: 0;
+  padding: 4.6rem 2rem;
+
   display: flex;
   justify-content: center;
-  padding: 4.6rem 2rem;
+  align-items: center;
+
+  transition: transform 1s;
 }
 
 .review {
-  width: 75%;
-  position: relative;
+  width: 70%;
 }
 
 .review-header {
-  font-size: 3.2rem;
-  margin-top: 3.6rem;
+  font-size: 2.25rem;
+  margin: 3.6rem 0;
 }
 
 .review-text {
   font-size: 2.2rem;
+  line-height: 1.3;
   font-style: italic;
   margin-bottom: 2.4rem;
 }
