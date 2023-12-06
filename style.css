@@ -25,6 +25,7 @@ body {
   color: #444;
   line-height: 1.8;
   background-color: #f2f2f2;
+  border-bottom: 12px solid #444;
 }
 
 /* general elements */
@@ -193,7 +194,8 @@ body {
   bottom: 5%;
 }
 
-.buy-link:hover {
+.buy-link:hover,
+.cta-btn-submit:hover {
   background-color: #c3dce8;
 }
 
@@ -305,6 +307,10 @@ body {
 /***************************/
 /* SIGNUP SECTION */
 /***************************/
+.signup-section {
+  margin-bottom: 18rem;
+}
+
 .signup-card {
   /* box-shadow: 20px 20px 17px 3px rgba(0, 0, 0, 0.1); */
   display: flex;
@@ -314,7 +320,6 @@ body {
 }
 
 .signup-img {
-  border-radius: 0.5rem;
   mix-blend-mode: multiply;
 }
 
@@ -328,4 +333,42 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 3rem;
+}
+
+.cta-input {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.cta-input label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.cta-input input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.9rem;
+}
+
+.cta-btn-submit {
+  background-color: #9bc5d9;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 0.9rem;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
 }
