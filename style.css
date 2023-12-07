@@ -217,7 +217,6 @@ body {
 /***************************/
 /* REVIEWS SECTION */
 /***************************/
-
 .reviews-section {
   max-width: 102rem;
   /* height: 50rem; */
@@ -236,6 +235,7 @@ body {
     rgba(255, 203, 125, 1) 47%,
     rgba(255, 224, 177, 1) 91%
   );
+  overflow: hidden;
 }
 
 .slide {

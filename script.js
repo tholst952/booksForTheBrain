@@ -14,8 +14,6 @@ const goToSlide = function (slide) {
   );
 };
 
-goToSlide(0);
-
 // Goto Next Slide
 const nextSlide = function () {
   if (curSlide === maxSlide - 1) {
@@ -38,3 +36,11 @@ const prevSlide = function () {
 
 btnRight.addEventListener('click', nextSlide);
 btnLeft.addEventListener('click', prevSlide);
+
+// keyboard arrow navigation
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowLeft') prevSlide();
+  if (e.key === 'ArrowRight') nextSlide();
+});
+
+goToSlide(0);
