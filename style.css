@@ -6,6 +6,18 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 - Colors Used:
+#f2f2f2;
+#fdfefe
+#444;
+#ffd08a
+rgba(101, 77, 41, 0.644)
+#ffcccc
+rgb(211, 211, 211)
+#9bc5d9
+#c3dce8
+
+
+
 */
 
 * {
@@ -25,7 +37,6 @@ body {
   color: #444;
   line-height: 1.8;
   background-color: #f2f2f2;
-  border-bottom: 12px solid #444;
 }
 
 /* general elements */
@@ -44,7 +55,7 @@ body {
   align-items: center;
   height: 6rem;
   padding: 1rem 0;
-  margin-bottom: 9rem;
+  margin: 1rem 0 9rem 0;
   font-size: 1.7rem;
 }
 
@@ -353,6 +364,7 @@ body {
   font-family: inherit;
   border: none;
   border-radius: 0.9rem;
+  box-shadow: 20px 20px 17px 3px rgba(0, 0, 0, 0.1);
 }
 
 .cta-btn-submit {
@@ -365,6 +377,10 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   border-radius: 0.9rem;
+}
+
+.footer {
+  border-bottom: 12px solid #444;
 }
 
 .footer-text {
